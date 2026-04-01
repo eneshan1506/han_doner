@@ -24,17 +24,22 @@ export default function Home() {
             </div>
 
             <div className="cta-row">
-              <a href={`tel:${siteConfig.contact.phone}`} className="btn btn-primary pulse-cta">
+              <a href={`tel:${siteConfig.contact.phone}`} className="btn btn-primary pulse-cta" title="Jetzt telefonisch bestellen">
                 Jetzt Bestellen
               </a>
-              <Link href="/menu" className="btn btn-outline">
+              <Link href="/menu" className="btn btn-outline" title="Speisekarte ansehen">
                 Speisekarte Entdecken
               </Link>
             </div>
           </div>
 
           <div className="hero-visual">
-            <img src={siteConfig.brand.heroImage} alt="Saftiger Döner mit frischem Gemüse" className="hero-image" />
+            <img
+              src={siteConfig.brand.heroImage}
+              alt="Saftiger Döner mit frischem Gemüse"
+              title="Saftiger Döner mit frischem Gemüse"
+              className="hero-image"
+            />
             <div className="hero-hours-card">
               <h2>Öffnungszeiten</h2>
               <ul>
@@ -54,14 +59,16 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <h2>Bestseller</h2>
-            <Link href="/menu">Komplette Speisekarte</Link>
+            <Link href="/menu" title="Zur kompletten Speisekarte">
+              Komplette Speisekarte
+            </Link>
           </div>
 
           <div className="featured-grid">
             {bestSellers.map((item) => (
               <article key={item.name} className="food-card">
                 <div className="food-image-wrap">
-                  <img src={item.image} alt={item.name} className="food-image" />
+                  <img src={item.image} alt={item.name} title={item.name} className="food-image" />
                   <span className="item-badge">Bestseller</span>
                 </div>
                 <div className="food-card-body">

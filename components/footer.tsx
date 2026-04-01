@@ -14,11 +14,15 @@ export function Footer() {
         </div>
 
         <div className="footer-minimal-bottom">
-          <a href={siteConfig.location.mapsUrl} target="_blank" rel="noreferrer">
+          <a href={siteConfig.location.mapsUrl} target="_blank" rel="noreferrer" title="Adresse in Google Maps öffnen">
             {siteConfig.location.addressLine}
           </a>
-          <a href={`tel:${siteConfig.contact.phone}`}>{siteConfig.contact.phone}</a>
-          <a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a>
+          <a href={`tel:${siteConfig.contact.phone}`} title="Telefonnummer anrufen">
+            {siteConfig.contact.phone}
+          </a>
+          <a href={`mailto:${siteConfig.contact.email}`} title="E-Mail senden">
+            {siteConfig.contact.email}
+          </a>
         </div>
       </div>
 

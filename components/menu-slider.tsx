@@ -32,6 +32,7 @@ export function MenuSlider({ label, items }: MenuSliderProps) {
         className="slider-arrow slider-arrow-left"
         onClick={() => scrollSlider("left")}
         aria-label={`${label} nach links scrollen`}
+        title="Nach links"
       >
         &#8592;
       </button>
@@ -39,7 +40,7 @@ export function MenuSlider({ label, items }: MenuSliderProps) {
         {items.map((item) => (
           <article key={item.name} className="menu-item-card">
             <div className="food-image-wrap">
-              <img src={item.image} alt={item.name} className="food-image" />
+              <img src={item.image} alt={item.name} title={item.name} className="food-image" />
               {item.bestSeller ? <span className="item-badge">Bestseller</span> : null}
             </div>
             <div className="food-card-body">
@@ -56,6 +57,7 @@ export function MenuSlider({ label, items }: MenuSliderProps) {
         className="slider-arrow slider-arrow-right"
         onClick={() => scrollSlider("right")}
         aria-label={`${label} nach rechts scrollen`}
+        title="Nach rechts"
       >
         &#8594;
       </button>

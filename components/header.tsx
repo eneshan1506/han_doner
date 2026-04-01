@@ -12,13 +12,13 @@ export function Header() {
 
         <nav className="nav" aria-label="Hauptnavigation">
           {navigation.map((item) => (
-            <Link key={item.href} href={item.href} className="nav-link">
+            <Link key={item.href} href={item.href} className="nav-link" title={item.label}>
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <a className="call-btn" href={`tel:${siteConfig.contact.phone}`}>
+        <a className="call-btn" href={`tel:${siteConfig.contact.phone}`} title="Jetzt anrufen">
           Anrufen
         </a>
       </div>
