@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { navigation, siteConfig } from "@/config/site";
 import { BrandLogo } from "@/components/brand-logo";
+import { MobileMenu } from "@/components/mobile-menu";
 
 export function Header() {
   return (
-    <header className="site-header">
+    <header className="site-header" id="site-header">
       <div className="container header-inner">
         <Link href="/" className="logo" aria-label="Startseite">
           <BrandLogo />
@@ -18,9 +19,16 @@ export function Header() {
           ))}
         </nav>
 
-        <a className="call-btn" href={`tel:${siteConfig.contact.phone}`} title="Jetzt anrufen">
-          Anrufen
+        <a
+          className="call-btn"
+          href={`tel:${siteConfig.contact.phone}`}
+          title="Jetzt anrufen"
+          id="header-call-btn"
+        >
+          📞 Anrufen
         </a>
+
+        <MobileMenu />
       </div>
     </header>
   );

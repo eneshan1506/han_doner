@@ -81,6 +81,33 @@ export const siteConfig = {
             "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
           bestSeller: false,
         },
+        {
+          name: "Lahmacun Spezial",
+          trName: "Lahmacun Döner",
+          desc: "Türkische Pizza mit Dönerfleisch, Salat und Sauce",
+          price: "9.90 EUR",
+          image:
+            "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1200&q=80",
+          bestSeller: true,
+        },
+        {
+          name: "Veggie Döner",
+          trName: "Vejetaryen Döner",
+          desc: "Fladenbrot mit gegrilltem Gemüse, Fetakäse und Kräutersauce",
+          price: "7.90 EUR",
+          image:
+            "https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=1200&q=80",
+          bestSeller: false,
+        },
+        {
+          name: "Pommdöner",
+          trName: "Kutu Döner Pommesli",
+          desc: "Knusprige Pommes frites topped mit saftigem Dönerfleisch und Saucen",
+          price: "8.90 EUR",
+          image:
+            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+          bestSeller: false,
+        },
       ],
     },
     {
@@ -140,6 +167,33 @@ export const siteConfig = {
             "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
           bestSeller: false,
         },
+        {
+          name: "Köfte Teller",
+          trName: "Köfte Tabağı",
+          desc: "Würzige Frikadellen vom Grill mit Reis, Salat und Sauce",
+          price: "13.90 EUR",
+          image:
+            "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+          bestSeller: true,
+        },
+        {
+          name: "Adana Dürüm",
+          trName: "Adana Dürüm",
+          desc: "Spicy Hackfleischspieß vom Grill, eingerollt mit Salat",
+          price: "10.90 EUR",
+          image:
+            "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1200&q=80",
+          bestSeller: false,
+        },
+        {
+          name: "Halloumi Dürüm",
+          trName: "Hellim Dürüm",
+          desc: "Gegrillter Halloumi-Käse in Lavaş-Brot mit frischer Minze",
+          price: "8.20 EUR",
+          image:
+            "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+          bestSeller: false,
+        },
       ],
     },
     {
@@ -197,6 +251,24 @@ export const siteConfig = {
           price: "1.80 EUR",
           image:
             "https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=1200&q=80",
+          bestSeller: false,
+        },
+        {
+          name: "Fritz-Kola",
+          trName: "Fritz Kola",
+          desc: "330 ml Flasche",
+          price: "2.90 EUR",
+          image:
+            "https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=1200&q=80",
+          bestSeller: false,
+        },
+        {
+          name: "Türkischer Tee",
+          trName: "Türk Çayı",
+          desc: "Frisch gebrühter schwarzer Tee im Glas",
+          price: "1.50 EUR",
+          image:
+            "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1200&q=80",
           bestSeller: false,
         },
       ],

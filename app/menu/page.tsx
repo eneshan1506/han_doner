@@ -1,12 +1,20 @@
+import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { MenuSlider } from "@/components/menu-slider";
 
+export const metadata: Metadata = {
+  title: `Speisekarte | ${siteConfig.brand.name}`,
+  description: `Entdecken Sie unsere Speisekarte – Döner, Dürüm, Teller und Getränke bei ${siteConfig.brand.name} in Berlin.`,
+};
+
 export default function MenuPage() {
   return (
-    <section className="section">
+    <section className="section page-fade-in" id="menu-page">
       <div className="container">
         <h1 className="page-title">Speisekarte</h1>
-        <p className="page-subtitle">Täglich frisch zubereitet mit authentischem türkischem Geschmack.</p>
+        <p className="page-subtitle">
+          Täglich frisch zubereitet mit authentischem türkischem Geschmack.
+        </p>
 
         <div className="menu-groups">
           {siteConfig.menu.map((group) => (
